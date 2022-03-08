@@ -4,7 +4,11 @@ import time
 
 pyautogui.PAUSE = 1
 
-# Passo 1: Entrar no sistema (no nosso caso, entrar no link)
+pyautogui.press("win")
+pyautogui.write("chrome")
+pyautogui.press("enter")
+
+
 pyautogui.hotkey("ctrl", "t")
 pyperclip.copy("https://drive.google.com/drive/folders/149xknr9JvrlEnhNWO49zPcw0PW5icxga?usp=sharing")
 pyautogui.hotkey("ctrl", "v")
